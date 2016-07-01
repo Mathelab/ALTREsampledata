@@ -1,5 +1,4 @@
 # AltreDataRepo
-A data repo
 
 ## ALTRE R Package
 
