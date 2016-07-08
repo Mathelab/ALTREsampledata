@@ -1,126 +1,85 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Data Repository for ALTRE Package by rfarouni</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Data Repository for ALTRE Package by Mathelab</title>
   </head>
+
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Data Repository for ALTRE Package</h1>
-      <h2 class="project-tagline">A Data Repo</h2>
-      <a href="https://github.com/rfarouni/AltreDataRepo" class="btn">View on GitHub</a>
-      <a href="https://github.com/rfarouni/AltreDataRepo/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/rfarouni/AltreDataRepo/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <div id="container">
+      <div class="inner">
 
-    <section class="main-content">
-      <h1>
-<a id="altredatarepo" class="anchor" href="#altredatarepo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>AltreDataRepo</h1>
+        <header>
+          <h1>Data Repository for ALTRE Package</h1>
+          <h2>A Data Repo</h2>
+        </header>
 
-<h2>
-<a id="altre-r-package" class="anchor" href="#altre-r-package" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ALTRE R Package</h2>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/Mathelab/AltreDataRepo/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/Mathelab/AltreDataRepo/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/Mathelab/AltreDataRepo" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
 
-<h3>
-<a id="install-from-github" class="anchor" href="#install-from-github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install From Github</h3>
+        <hr>
 
-<div class="highlight highlight-source-r"><pre><span class="pl-e">devtools</span><span class="pl-k">::</span>install_github(<span class="pl-s"><span class="pl-pds">"</span>rfarouni/PackageALTRE<span class="pl-pds">"</span></span>)</pre></div>
+        <section id="main_content">
+          <h2>
+<a id="example-data-for-the-altre-r-package" class="anchor" href="#example-data-for-the-altre-r-package" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example data for the ALTRE R package</h2>
 
-<h3>
-<a id="to-run" class="anchor" href="#to-run" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To Run</h3>
+<p>A restricted subset of the data with one chromosome (i.e. chromosome 21) can be found on this page (<a href="http://mathelab.github.io/AltreDataRepo/">http://mathelab.github.io/AltreDataRepo/</a>). The corresponding CSV file for input into ALTRE can be downloaded <a href="https://raw.githubusercontent.com/mathelab/AltreDataRepo/master/DNaseEncodeWindows.csv">here</a> .  Be sure to modify the datapath column of the CSV file so that the appropriate full path of the data files on your local machine is included.</p>
 
-<p>To run the shiny app inside R Package type-in</p>
-
-<div class="highlight highlight-source-r"><pre>library(<span class="pl-smi">ALTRE</span>)
-runShinyApp()</pre></div>
-
-<h2>
-<a id="data" class="anchor" href="#data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data</h2>
-
-<p>A restricted subset of the data with one chromosome (i.e. chromosome 21) can be found on this page (<a href="http://rfarouni.github.io/AltreDataRepo/">http://rfarouni.github.io/AltreDataRepo/</a>). The  csv file is included and can be downloaded seperatly <a href="https://raw.githubusercontent.com/rfarouni/AltreDataRepo/master/DNaseEncodeWindows.csv">here</a></p>
-
-<p>To download the entire data, please use a <em>file download manager</em> to download the files from the links listed below. After you download the files, modify the datapath column of the csv file so that all of the rows contain the file path pointing to the location of the data files on your local machine.</p>
-
-<h2>
-<a id="bam-files" class="anchor" href="#bam-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>BAM files:</h2>
+<p>To download the entire data, please use a <em>file download manager</em> to download the files from the links listed below. </p>
 
 <h3>
-<a id="a549" class="anchor" href="#a549" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>A549:</h3>
+<a id="alignment-in-bam-format-files" class="anchor" href="#alignment-in-bam-format-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Alignment (in BAM format) files:</h3>
+
+<h4>
+<a id="a549" class="anchor" href="#a549" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><em>A549</em>:</h4>
 
 <p><a href="https://www.encodeproject.org/files/ENCFF001CLE/@@download/ENCFF001CLE.bam">https://www.encodeproject.org/files/ENCFF001CLE/@@download/ENCFF001CLE.bam</a></p>
 
 <p><a href="https://www.encodeproject.org/files/ENCFF001CLJ/@@download/ENCFF001CLJ.bam">https://www.encodeproject.org/files/ENCFF001CLJ/@@download/ENCFF001CLJ.bam</a></p>
 
-<h3>
-<a id="saec" class="anchor" href="#saec" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SAEC:</h3>
+<h4>
+<a id="saec" class="anchor" href="#saec" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><em>SAEC</em>:</h4>
 
 <p><a href="https://www.encodeproject.org/files/ENCFF001EFI/@@download/ENCFF001EFI.bam">https://www.encodeproject.org/files/ENCFF001EFI/@@download/ENCFF001EFI.bam</a></p>
 
 <p><a href="https://www.encodeproject.org/files/ENCFF001EFN/@@download/ENCFF001EFN.bam">https://www.encodeproject.org/files/ENCFF001EFN/@@download/ENCFF001EFN.bam</a></p>
 
-<h2>
-<a id="bed-files" class="anchor" href="#bed-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>BED files:</h2>
-
 <h3>
-<a id="a549-1" class="anchor" href="#a549-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>A549:</h3>
+<a id="peakhotspot-in-bed-format-files" class="anchor" href="#peakhotspot-in-bed-format-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Peak/hotspot (in BED format) files:</h3>
+
+<h4>
+<a id="a549-1" class="anchor" href="#a549-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><em>A549</em>:</h4>
 
 <p><a href="http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeUwDnase/wgEncodeUwDnaseA549HotspotsRep1.broadPeak.gz">http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeUwDnase/wgEncodeUwDnaseA549HotspotsRep1.broadPeak.gz</a></p>
 
 <p><a href="http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeUwDnase/wgEncodeUwDnaseA549HotspotsRep2.broadPeak.gz">http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeUwDnase/wgEncodeUwDnaseA549HotspotsRep2.broadPeak.gz</a></p>
 
-<h3>
-<a id="saec-1" class="anchor" href="#saec-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SAEC:</h3>
+<h4>
+<a id="saec-1" class="anchor" href="#saec-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><em>SAEC</em>:</h4>
 
 <p><a href="http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeUwDnase/wgEncodeUwDnaseSaecHotspotsRep1.broadPeak.gz">http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeUwDnase/wgEncodeUwDnaseSaecHotspotsRep1.broadPeak.gz</a></p>
 
 <p><a href="http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeUwDnase/wgEncodeUwDnaseSaecHotspotsRep2.broadPeak.gz">http://hgdownload.cse.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeUwDnase/wgEncodeUwDnaseSaecHotspotsRep2.broadPeak.gz</a></p>
+        </section>
 
-<h2>
-<a id="blacklisted-genomic-regions-for-functional-genomics-analysis" class="anchor" href="#blacklisted-genomic-regions-for-functional-genomics-analysis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Blacklisted genomic regions for functional genomics analysis</h2>
+        <footer>
+          Data Repository for ALTRE Package is maintained by <a href="https://github.com/Mathelab">Mathelab</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
 
-<p><a href="https://sites.google.com/site/anshulkundaje/projects/blacklists">https://sites.google.com/site/anshulkundaje/projects/blacklists</a></p>
-
-<h2>
-<a id="to-build-from-source-optional" class="anchor" href="#to-build-from-source-optional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To build from source (Optional)</h2>
-
-<p>To inculde the vignette in the installation package run</p>
-
-<div class="highlight highlight-source-r"><pre>install.packages(<span class="pl-s"><span class="pl-pds">"</span>devtools<span class="pl-pds">"</span></span>)
-biocLite(<span class="pl-s"><span class="pl-pds">"</span>BiocCheck<span class="pl-pds">"</span></span>)
-<span class="pl-e">devtools</span><span class="pl-k">::</span>install(<span class="pl-v">build_vignettes</span> <span class="pl-k">=</span> <span class="pl-c1">TRUE</span>)
-BiocCheck(<span class="pl-s"><span class="pl-pds">"</span>/home/rick/Documents/ALTRE<span class="pl-pds">"</span></span>)</pre></div>
-
-<p>Make sure that the <em>vignette.Rmd</em>file contains the following commands in the header:</p>
-
-<div class="highlight highlight-source-r"><pre><span class="pl-smi">author</span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>....<span class="pl-pds">"</span></span>
-<span class="pl-smi">title</span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>ALTRE: vignette<span class="pl-pds">"</span></span>
-<span class="pl-smi">date</span><span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>`r Sys.Date()`<span class="pl-pds">"</span></span>
-<span class="pl-smi">output</span><span class="pl-k">:</span> 
-  <span class="pl-e">BiocStyle</span><span class="pl-k">::</span><span class="pl-smi">html_document</span><span class="pl-k">:</span>
-    <span class="pl-smi">toc</span><span class="pl-k">:</span> <span class="pl-smi">true</span>
-  <span class="pl-e">BiocStyle</span><span class="pl-k">::</span><span class="pl-smi">pdf_document</span><span class="pl-k">:</span>
-    <span class="pl-smi">toc</span><span class="pl-k">:</span> <span class="pl-smi">true</span>
-<span class="pl-smi">vignette</span><span class="pl-k">:</span> <span class="pl-k">&gt;</span>
-  %\<span class="pl-smi">VignetteIndexEntry</span>{<span class="pl-smi">ALTRE</span><span class="pl-k">:</span> <span class="pl-smi">vignette</span>}
-  %\<span class="pl-smi">VignetteEngine</span>{<span class="pl-e">knitr</span><span class="pl-k">::</span><span class="pl-smi">rmarkdown</span>}
-  %\<span class="pl-smi">VignetteEncoding</span>{<span class="pl-smi">UTF</span><span class="pl-k">-</span><span class="pl-c1">8</span>}</pre></div>
-
-<p>and the following command in the body:</p>
-
-<div class="highlight highlight-source-r"><pre><span class="pl-e">BiocStyle</span><span class="pl-k">::</span>markdown()</pre></div>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/rfarouni/AltreDataRepo">Data Repository for ALTRE Package</a> is maintained by <a href="https://github.com/rfarouni">rfarouni</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
+        
+      </div>
+    </div>
   </body>
 </html>
