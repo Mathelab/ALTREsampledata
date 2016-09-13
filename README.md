@@ -1,6 +1,6 @@
 ## Example data for the ALTRE R package
 
-A restricted subset of the data with one chromosome (i.e. chromosome 21) can be found on this page (http://mathelab.github.io/AltreDataRepo/). The corresponding CSV file for input into ALTRE can be downloaded [here](https://raw.githubusercontent.com/mathelab/AltreDataRepo/master/DNaseEncodeWindows.csv) .  Be sure to modify the datapath column of the CSV file so that the appropriate full path of the data files on your local machine is included.
+A restricted subset of the data with one chromosome (i.e. chromosome 21) can be found on this page (http://mathelab.github.io/AltreDataRepo/). The corresponding CSV file for input into ALTRE can be downloaded [here](https://raw.githubusercontent.com/mathelab/AltreDataRepo/master/DNaseEncodeExample.csv) .  Be sure to modify the datapath column of the CSV file so that the appropriate full path of the data files on your local machine is included.
 
 
 To download the entire data, please use a *file download manager* to download the files from the links listed below. 
