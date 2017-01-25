@@ -21,7 +21,7 @@ perl ./gtftobed_human.pl [inputgtf] [outputfile]
 perl ./gtftobed_human.pl Homo_sapiens.GRCh37.75.gtf Homo_sapiens.GRCh37.75_exon1only.bed
 ```
 
-The script is customized to this gtf file. It is extremely unlikely to work on a gtf file of another species or even a different human build. 
+The script is customized to this gtf file. It may not work on a gtf file of another species or even a different human build. 
 
 However, with minor modifications (on your part!) it can tackle other gtf files and so it is a good starting place. 
 
