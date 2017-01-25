@@ -1,13 +1,15 @@
 ##Need to make a file of Transcription Start Sites (TSS) for ALTRE *getTSS* function?##
 
-By default, ALTRE works on the hg19 human genome. However, the new update (01/25/2017) enables ALTRE to easily take on other human builds or other organisms entirely. However, it is up to users to provide their own file of gene transcription start sites to supply to the *getTSS()* function. This file can be created from a gtf file.
+By default ALTRE works on the hg19 human genome. However, the new update (01/25/2017) enables ALTRE to easily take on other human builds or other organisms entirely. However, it is up to users to provide their own file of gene transcription start sites to supply to the *getTSS()* function. This file can be created from a gtf file.
 
-The *getTSS()* function requires the transcription start sites to be in the following format: chr, start, stop, gene_name. A gtf is not in this format, and may contain additional information besides TSS, such as intron start and stop sites. These need to be filtered out. 
+The *getTSS()* function requires the transcription start sites to be in the following format: chr, start, stop, gene_name. A gtf is not in this format, and may contain additional information besides TSS, such as the start and stop sites of exons in the genome. These need to be filtered out. 
 
 The perl file available in this folder converts a human hg19 gtf file to a bed file -- usable with the ALTRE R package (in the *getTSS* function). 
 
 The gtf file is too large to host on a github free repository. 
 The gtf file can be download here: ftp://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz
+
+Basically, I decided that TSS for me would be the 1st exon of a gene. In the perl script I parse through the all the data looking for all the exon 1s and placing them in the bed file. 
 
 How to run the script:
 
