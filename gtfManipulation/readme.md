@@ -9,7 +9,7 @@ The perl file available in this folder converts a human hg19 gtf file to the bed
 The example gtf file is too large to host on a github free repository. 
 The gtf file can be download here: ftp://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz
 
-Basically, I decided that TSS for me would be the 1st exon of a gene. In the perl script I parse through the all the data looking for all the exon 1s and placing them in the bed file. 
+Basically, I decided that TSS for me would be the start coordinates of the 1st exon of a gene. In the perl script I parse through the all the data looking for all the exon 1s and placing them in the bed file. 
 
 How to run the script:
 
