@@ -1,6 +1,6 @@
 ##Need to make a file of Transcription Start Sites (TSS) for ALTRE *getTSS* function?##
 
-By default ALTRE works on the hg19 human genome. However, the new update (01/25/2017) enables ALTRE to easily take on other human builds or other organisms entirely. However, it is up to users to provide their own file of gene transcription start sites to supply to the *getTSS()* function. This file can be created from a gtf file.
+By default ALTRE works on the hg19 human genome. However, the __new update (01/25/2017)__ enables ALTRE to easily take on other human builds or other organisms entirely. However, it is up to users to provide their own file of gene transcription start sites to supply to the *getTSS()* function. This file can be created from a gtf file.
 
 The *getTSS()* function requires the transcription start sites to be in the following format: chr, start, stop, gene_name. A gtf is not in this format, and may contain additional information besides TSS, such as the start and stop sites of exons in the genome. These need to be filtered out. 
 
