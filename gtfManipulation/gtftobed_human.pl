@@ -12,7 +12,7 @@ pod2usage("Usage: $0 ensembl.csv tss.bed") if ((@ARGV != 2));
 # Open files
 open(my $ref, "<", $ARGV[0]) or die "Can't open $ARGV[0] $!!";
 open(my $out, ">", $ARGV[1]) or die "Can't open $ARGV[1] $!";
-print $out "chr\tstart\tstop\texon\texon_number\tgeneid\ttranscriptid\tgenename\ttranscriptname\tstrand\n";
+print $out "chr\tstart\tstop\tgenename\texon_number\tgeneid\ttranscriptid\texon\ttranscriptname\tstrand\n";
 
 #we will be making a hash of arrays below 
 my %tss; #hash that keeps track of tss
@@ -58,7 +58,7 @@ while(<$ref>) {
         #if this transcript already exists in the hash skip 
         else {
 			$tss{($gene."_".$transc)}=\@tssarray;
-            print $out $chrom."\t".$start."\t".($start+1)."\t".$category."\t".$exonnumber."\t".$gene."\t".$transc."\t".$genename."\t".$transcname."\t".$strand."\n"
+            print $out $chrom."\t".$start."\t".($start+1)."\t".$genename."\t".$exonnumber."\t".$gene."\t".$transc."\t".$category."\t".$transcname."\t".$strand."\n"
 		#otherwise, this transcript does not exist in the hash so add it and print the info we want to the out file
         }
 	}
@@ -71,7 +71,7 @@ while(<$ref>) {
         #if this transcript already exists in the hash skip 
         else {
 			$tss{($gene."_".$transc)}=\@tssarray;
-            print $out $chrom."\t".($stop-1)."\t".($stop)."\t".$category."\t".$exonnumber."\t".$gene."\t".$transc."\t".$genename."\t".$transcname."\t".$strand."\n"
+            print $out $chrom."\t".($stop-1)."\t".($stop)."\t".$genename."\t".$exonnumber."\t".$gene."\t".$transc."\t".$category."\t".$transcname."\t".$strand."\n"
 		#otherwise, this transcript does not exist in the hash so add it and print the info we want to the out file
         }
 	}
