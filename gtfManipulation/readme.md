@@ -13,11 +13,21 @@ Basically, I decided that TSS for me would be the 1st exon of a gene. In the per
 
 How to run the script:
 
+```{R}
 perl ./gtftobed_human.pl [inputgtf] [outputfile]
+```
 
+```{R}
 perl ./gtftobed_human.pl Homo_sapiens.GRCh37.75.gtf Homo_sapiens.GRCh37.75_exon1only.bed
+```
 
 The script is customized to this gtf file. It is extremely unlikely to work on a gtf file of another species or even a different human build. 
 
 However, with minor modifications (on your part!) it can tackle other gtf files and so it is a good starting place. 
 
+When you have the correct bed file it can be supplied to the *getTSS()* function: 
+
+
+```{R}
+TSSannot <- getTSS(file="Homo_sapiens.GRCh37.75_exon1only.bed")
+```
