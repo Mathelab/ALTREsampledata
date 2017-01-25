@@ -58,7 +58,7 @@ while(<$ref>) {
         #if this transcript already exists in the hash skip 
         else {
 			$tss{($gene."_".$transc)}=\@tssarray;
-            print $out $chrom."\t".$start."\t".($start+1)."\t".$genename."\t".$exonnumber."\t".$gene."\t".$transc."\t".$category."\t".$transcname."\t".$strand."\n"
+            print $out "chr".$chrom."\t".$start."\t".($start+1)."\t".$genename."\t".$exonnumber."\t".$gene."\t".$transc."\t".$category."\t".$transcname."\t".$strand."\n"
 		#otherwise, this transcript does not exist in the hash so add it and print the info we want to the out file
         }
 	}
@@ -71,7 +71,7 @@ while(<$ref>) {
         #if this transcript already exists in the hash skip 
         else {
 			$tss{($gene."_".$transc)}=\@tssarray;
-            print $out $chrom."\t".($stop-1)."\t".($stop)."\t".$genename."\t".$exonnumber."\t".$gene."\t".$transc."\t".$category."\t".$transcname."\t".$strand."\n"
+            print $out "chr".$chrom."\t".($stop-1)."\t".($stop)."\t".$genename."\t".$exonnumber."\t".$gene."\t".$transc."\t".$category."\t".$transcname."\t".$strand."\n"
 		#otherwise, this transcript does not exist in the hash so add it and print the info we want to the out file
         }
 	}
